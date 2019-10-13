@@ -21,6 +21,15 @@
   <title>{% block title %}{% endblock %}</title>
   {{ partial('_third-party/analytics/index.swig', {}, {cache: theme.cache.enable}) }}
   {{ partial('_scripts/noscript.swig', {}, {cache: theme.cache.enable}) }}
+  <style>
+    span.line.tuture-add {
+      font-weight: bold;
+    }
+
+    span.line.tuture-del {
+      opacity: 0.3;
+    }
+  </style>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="{{ page.lang or page.language or config.language }}">
@@ -75,5 +84,22 @@
   {%- if theme.pjax %}
     </div>
   {%- endif %}
+  <script>
+    const line = document.getElementsByClassName('line');
+    const arrLine = Array.from(line);
+
+    arrLine.map(item => {
+      if (item.innerText.startsWith('[tuture-add]')) {
+          item.innerHTML = item.innerHTML.replace('[tuture-add]', '');
+          item.className = item.className + ' tuture-add';
+      } else if (item.innerText.startsWith('[tuture-del]')) {
+          item.innerHTML = item.innerHTML.replace('[tuture-del]', '');
+          item.className = item.className + ' tuture-del';
+      } else if (item.innerText.startsWith('[tuture-omit]')) {
+        item.innerHTML = item.innerHTML.replace('[tuture-omit]', '...');
+        item.className = item.className + ' tuture-omit';
+      }
+    })
+  </script>
 </body>
 </html>
