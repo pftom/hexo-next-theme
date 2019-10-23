@@ -30,6 +30,7 @@
       opacity: 0.3;
     }
   </style>
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.15.10/build/styles/default.min.css">
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="{{ page.lang or page.language or config.language }}">
@@ -81,22 +82,23 @@
 
   {{- next_inject('bodyEnd') }}
 
-  {%- if theme.pjax %}
-    </div>
-  {%- endif %}
   <script>
     const line = document.getElementsByClassName('line');
     const arrLine = Array.from(line);
 
+    const delRegex = /\[.*tuture.*-.*del.*\]/;
+    const addRegex = /\[.*tuture.*-.*add.*\]/
+    const omitRegex = /\[.*tuture.*-.*omit.*\]/
+
     arrLine.map(item => {
       if (item.innerText.startsWith('[tuture-add]')) {
-          item.innerHTML = item.innerHTML.replace('[tuture-add]', '');
+          item.innerHTML = item.innerHTML.replace(addRegex, '');
           item.className = item.className + ' tuture-add';
       } else if (item.innerText.startsWith('[tuture-del]')) {
-          item.innerHTML = item.innerHTML.replace('[tuture-del]', '');
+          item.innerHTML = item.innerHTML.replace(delRegex, '');
           item.className = item.className + ' tuture-del';
       } else if (item.innerText.startsWith('[tuture-omit]')) {
-        item.innerHTML = item.innerHTML.replace('[tuture-omit]', '...');
+        item.innerHTML = item.innerHTML.replace(omitRegex, '...');
         item.className = item.className + ' tuture-omit';
       }
     })
