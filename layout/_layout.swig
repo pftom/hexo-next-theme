@@ -167,6 +167,10 @@
         text-align: center;
       }
     }
+
+    .vsys {
+      display:none !important;
+      }
   </style>
   <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.15.10/build/styles/default.min.css">
 </head>
