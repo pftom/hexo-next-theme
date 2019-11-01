@@ -173,7 +173,9 @@
       }
   </style>
   <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.15.10/build/styles/default.min.css">
-  <script data-ad-client="ca-pub-9380061057176058" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <!-- Google AdSense start -->
+  {% include '_custom/google_adsense.swig' %}
+  <!-- Google AdSense end -->
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="{{ page.lang or page.language or config.language }}">
