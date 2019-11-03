@@ -98,7 +98,7 @@ footer:
 # CC licenses are available in 39 languages, you can find the specific and correct abbreviation you need on https://creativecommons.org
 creative_commons:
   license: by-nc-sa
-  sidebar: true
+  sidebar: false
   post: true
   language:
 
@@ -187,7 +187,8 @@ site_state: true
 # Value before `||` delimiter is the target permalink.
 # Value after `||` delimiter is the name of Font Awesome icon. If icon (with or without delimiter) is not specified, globe icon will be loaded.
 social:
-  #GitHub: https://github.com/yourname || github
+  # GitHub: https://github.com/tuture-dev/tuture || github
+  # Gitter: https://gitter.im/tuture-dev/tuture || gitter
   #E-Mail: mailto:yourname@gmail.com || envelope
   #Weibo: https://weibo.com/yourname || weibo
   #Google: https://plus.google.com/yourname || google
@@ -202,7 +203,7 @@ social:
 social_icons:
   enable: true
   icons_only: false
-  transition: false
+  transition: true
 
 # Blog rolls
 links_settings:
@@ -507,14 +508,14 @@ bing_site_verification:
 
 # Yandex Webmaster tools verification.
 # See: https://webmaster.yandex.ru
-yandex_site_verification:
+yandex_site_verification: 90341ba6c811f41d
 
 # Baidu Webmaster tools verification.
 # See: https://ziyuan.baidu.com/site
 baidu_site_verification:
 
 # Enable baidu push so that the blog will push the url to baidu automatically which is very helpful for SEO.
-baidu_push: false
+baidu_push: true
 
 
 # ---------------------------------------------------------------
@@ -726,7 +727,7 @@ rating:
 
 # AddThis Share. See: https://www.addthis.com
 # Go to https://www.addthis.com/dashboard to customize your tools.
-add_this_id:
+add_this_id: ra-5dbec6cce72b621d
 
 
 # ---------------------------------------------------------------
