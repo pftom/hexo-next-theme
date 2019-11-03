@@ -129,8 +129,7 @@ menu:
   tags: /tags/ || tags
   categories: /categories/ || th
   archives: /archives/ || archive
-  schedule: /schedule/ || calendar
-  sitemap: /sitemap.xml || sitemap
+  # schedule: /schedule/ || calendar
   # commonweal: /404/ || heartbeat
   about: /about/ || user
 
