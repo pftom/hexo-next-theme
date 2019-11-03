@@ -227,10 +227,6 @@
 
   {{- next_inject('bodyEnd') }}
 
-  <!-- mailchimp start -->
-  {% include '_custom/mailchimp.swig' %}
-  <!-- mailchimp end -->
-
   <script>
     const line = document.getElementsByClassName('line');
     const arrLine = Array.from(line);
