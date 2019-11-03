@@ -294,7 +294,6 @@
         {%- if not isLast %}
           <div class="post-eof"></div>
         {%- endif %}
-        {% include 'google_adsense.swig' %}
       </footer>
     {%- endif %}
   </div>
