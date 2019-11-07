@@ -665,8 +665,8 @@ gitalk:
   enable: true
   github_id: pftom # GitHub repo owner
   repo: https://github.com/tuture-dev/hub # Repository name to store issues
-  client_id: 07c982afd47a7d0ba6fb # GitHub Application Client ID
-  client_secret: 56c6ff0832024ab26fee92f94da00712b4848784 # GitHub Application Client Secret
+  client_id: 43f40bd7ab08b30efdc4 # GitHub Application Client ID
+  client_secret: 1700655af712e7cf449fa9779ef0d543ecc6e0db # GitHub Application Client Secret
   admin_user: pftom # GitHub repo owner and collaborators, only these guys can initialize gitHub issues
   distraction_free_mode: true # Facebook-like distraction free mode
   # Gitalk's display language depends on user's browser or system environment
