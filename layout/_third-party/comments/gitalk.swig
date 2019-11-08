@@ -11,7 +11,7 @@
       clientSecret: '{{ theme.gitalk.client_secret }}',
       repo: '{{ theme.gitalk.repo }}',
       owner: '{{ theme.gitalk.github_id }}',
-      admin: ['{{ theme.gitalk.admin_user }}'],
+      admin: '{{ theme.gitalk.admin_user }}'.split(','),
       id: '{{ gitalk_md5(page.path) }}',
       {%- if theme.gitalk.language == '' %}
         language: window.navigator.language || window.navigator.userLanguage,
