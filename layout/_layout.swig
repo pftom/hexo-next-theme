@@ -231,9 +231,9 @@
     const line = document.getElementsByClassName('line');
     const arrLine = Array.from(line);
 
-    const delRegex = /\[.*tuture.*-.*del.*\]/;
-    const addRegex = /\[.*tuture.*-.*add.*\]/
-    const omitRegex = /\[.*tuture.*-.*omit.*\]/
+    const delRegex = /\[.*tuture.*-.*del.*?\]/;
+    const addRegex = /\[.*tuture.*-.*add.*?\]/;
+    const omitRegex = /\[.*tuture.*-.*omit.*?\]/;
 
     arrLine.map(item => {
       if (item.innerText.startsWith('[tuture-add]')) {
