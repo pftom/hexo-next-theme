@@ -197,6 +197,10 @@
         background-color: #222;
         color: #FFF;
       }
+
+      figcaption .exturl {
+        float: right;
+      }
   </style>
   <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.15.10/build/styles/default.min.css">
   <!-- Google AdSense start -->
