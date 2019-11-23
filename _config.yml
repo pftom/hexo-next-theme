@@ -130,6 +130,7 @@ menu:
   # commonweal: /404/ || heartbeat
   about: /about/ || user
   文档: https://docs.tuture.co/zh/ || book
+  FAQ: /FAQ || question
 
 # Enable / Disable menu icons / item badges.
 menu_settings:

@@ -171,11 +171,39 @@
     .vsys {
       display:none !important;
       }
+
+      .tuture-shepherd .tippy-tooltip {
+        border: 2px solid #222;
+      }
+
+      .tuture-shepherd .tuture-shepherd-text {
+        font-size: 0.9em;
+        line-height: 2;
+        text-align: left;
+      }
+
+      .tuture-shepherd .tippy-tooltip[data-placement^=right] .tippy-arrow{
+        border-right-color: #222 !important;
+        left: -10px;
+      }
+
+      .tuture-shepherd .tuture-shepherd-button {
+        background-color: #FFF;
+        border: 1px solid #222;
+        color: #222;
+      }
+
+       .tuture-shepherd .tuture-shepherd-button:hover {
+        background-color: #222;
+        color: #FFF;
+      }
   </style>
   <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.15.10/build/styles/default.min.css">
   <!-- Google AdSense start -->
   {% include '_custom/google_adsense.swig' %}
   <!-- Google AdSense end -->
+
+  <script src="https://cdn.jsdelivr.net/npm/shepherd.js@5.0.1/dist/js/shepherd.js"></script>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="{{ page.lang or page.language or config.language }}">
@@ -247,6 +275,45 @@
         item.className = item.className + ' tuture-omit';
       }
     })
+  </script>
+  <script>
+    const isReaded = localStorage.getItem("isReaded");
+
+    if (!isReaded) {
+      const tour = new Shepherd.Tour({
+        defaultStepOptions: {
+          cancelIcon: {
+            enabled: true
+          },
+          classes: 'shepherd-theme-custom',
+          scrollTo: true
+        },
+        classPrefix: 'tuture-'
+      });
+
+      tour.addStep({
+        id: 'example-step',
+        text: `图雀社区所有的教程都是基于 <a href='https://github.com/tuture-dev/tuture'>Tuture</a> 写成，有着多个步骤，每个步骤都是基于代码的，
+  而每步代码是相对于上一步的变化，所以对 Git 不是很了解的同学，我们强烈建议您了解一下教程阅读说明</a>。`,
+        classes: 'example-step-extra-class',
+        attachTo: {
+          element: '.menu-item-faq',
+          on: 'right'
+        },
+        buttons: [
+          {
+            text: '前往',
+            action() {
+              tour.cancel();
+              window.location.href = "/FAQ";
+              localStorage.setItem('isReaded', true);
+            }
+          }
+        ]
+      });
+
+      tour.start();
+    }
   </script>
 </body>
 </html>
