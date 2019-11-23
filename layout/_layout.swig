@@ -313,6 +313,10 @@
       });
 
       tour.start();
+
+      Shepherd.on('cancel', function () {
+        localStorage.setItem('isReaded', true);
+      })
     }
   </script>
 </body>
