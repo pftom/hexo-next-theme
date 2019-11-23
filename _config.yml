@@ -410,7 +410,7 @@ bookmark:
 # `Follow me on GitHub` banner in the top-right corner.
 github_banner:
   enable: true
-  permalink: https://github.com/tutureproject/tuture
+  permalink: https://github.com/tutureproject/hub
   title: Follow me on GitHub
 
 # ---------------------------------------------------------------
@@ -442,7 +442,7 @@ font:
   # Global font settings used for all elements inside <body>.
   global:
     external: true
-    family: Lato
+    family: Roboto
     size:
 
   # Font settings for site title (.site-title).
@@ -465,7 +465,7 @@ font:
   # Font settings for  and code blocks.
   codes:
     external: true
-    family:
+    family: Roboto Mono
 
 # ---------------------------------------------------------------
 # SEO Settings
