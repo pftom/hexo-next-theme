@@ -299,13 +299,13 @@ reward:
 related_posts:
   enable: true
   title: # Custom header, leave empty to use the default one
-  display_in_home: true
+  display_in_home: false
   params:
     maxCount: 5
     #PPMixingRate: 0.0
-    #isDate: false
-    #isImage: false
-    #isExcerpt: false
+    isDate: true
+    # isImage: true
+    isExcerpt: false
 
 # Post edit
 # Dependencies: https://github.com/hexojs/hexo-deployer-git
