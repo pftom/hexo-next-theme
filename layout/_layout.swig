@@ -267,12 +267,26 @@
     const addRegex = /\[.*tuture.*-.*add.*?\]/;
     const omitRegex = /\[.*tuture.*-.*omit.*?\]/;
 
+    const delSpaceRegex = /^\s*\[.*tuture.*-.*del.*?\]\s*$/;
+    const addSpaceRegex = /^\s*\[.*tuture.*-.*add.*?\]\s*$/;
+    const omitSpaceRegex = /^\s*\[.*tuture.*-.*omit.*?\]\s*$/;
+
     arrLine.map(item => {
       if (item.innerText.startsWith('[tuture-add]')) {
+        if (addSpaceRegex.test(item.innerText)) {
+          item.innerHTML = item.innerHTML.replace(addRegex, ' ');
+        } else {
           item.innerHTML = item.innerHTML.replace(addRegex, '');
+        }
+
           item.className = item.className + ' tuture-add';
       } else if (item.innerText.startsWith('[tuture-del]')) {
-          item.innerHTML = item.innerHTML.replace(delRegex, '');
+          if (delSpaceRegex.test(item.innerText)) {
+            item.innerHTML = item.innerHTML.replace(delRegex, ' ');
+          } else {
+            item.innerHTML = item.innerHTML.replace(delRegex, '');
+          }
+
           item.className = item.className + ' tuture-del';
       } else if (item.innerText.startsWith('[tuture-omit]')) {
         item.innerHTML = item.innerHTML.replace(omitRegex, '...');
