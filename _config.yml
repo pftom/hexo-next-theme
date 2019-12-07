@@ -129,7 +129,7 @@ menu:
   # schedule: /schedule/ || calendar
   # commonweal: /404/ || heartbeat
   about: /about/ || user
-  文档: https://docs.tuture.co/zh/ || book
+  文档: https://docs.tuture.co/ || book
   FAQ: /FAQ || question
 
 # Enable / Disable menu icons / item badges.
