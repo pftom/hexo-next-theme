@@ -75,3 +75,46 @@
 @import 'post-reward' if (hexo-config('reward_settings.enable'));
 
 @import 'post-copyright' if (hexo-config('creative_commons.post'));
+
+#qrcode_subscriber-container {
+  margin: 20px auto;
+  padding: 10px 0;
+  text-align: center;
+  width: 90%;
+}
+
+#qrocde-qr {
+  padding-top: 20px;
+
+  a {
+    border: 0;
+  }
+
+  img {
+    display: inline-block;
+    margin: .8em 2em 0 2em;
+    max-width: 100%;
+    width: 180px;
+  }
+
+  p {
+    text-align: center;
+  }
+
+  if (hexo-config('reward_settings.animation')) {
+    > div:hover p {
+      animation: roll .1s infinite linear;
+    }
+
+    @keyframes roll {
+      from {
+        transform: rotateZ(30deg);
+      }
+
+      to {
+        transform: rotateZ(-30deg);
+      }
+    }
+  }
+}
+

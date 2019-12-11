@@ -1,4 +1,19 @@
-<div id="wechat_subscriber" style="display: block; padding: 10px 0; margin: 20px auto; width: 100%; text-align: center;">
-  <img id="wechat_subscriber_qcode" src="{{ url_for(theme.wechat_subscriber.qcode) }}" alt="{{ author }} wechat" style="width: 200px; max-width: 100%;">
+<div id="qrcode_subscriber-container">
   <div>{{ theme.wechat_subscriber.description }}</div>
+
+  <div id="qrocde-qr">
+    {%- for name, image in theme.qrcode_subscriber %}
+      {%- set builtin = ['wechat', 'qq_group'] %}
+      {%- if builtin.includes(name) %}
+        {%- set translation = __('qrcode.' + name) %}
+      {% else %}
+        {%- set translation = name %}
+      {%- endif %}
+      <div style="display: inline-block">
+        <img src="{{ url_for(image) }}" alt="{{ author }} {{ translation }}">
+        <p>{{ translation }}</p>
+      </div>
+    {%- endfor %}
+
+  </div>
 </div>
