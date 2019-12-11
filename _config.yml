@@ -123,6 +123,7 @@ scheme: Pisces
 # External url should start with http:// or https://
 menu:
   home: / || home
+  路线: /roadmaps || code-fork
   tags: /tags/ || tags
   categories: /categories/ || th
   archives: /archives/ || archive
