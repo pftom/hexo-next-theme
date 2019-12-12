@@ -17,7 +17,7 @@
         archives: site.posts.length,
         categories: site.categories.length,
         tags: site.tags.length,
-        ['路线']: 7 }
+        ['路线']: 2 }
       %}
       {%- for menu, count in badges %}
         {%- if name == menu %}
