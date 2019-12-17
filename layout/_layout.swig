@@ -132,11 +132,16 @@
 
     @media screen and (max-width:652px) {
       .profileBox {
-        align-items: flex-start;
+        align-items: center;
+        flex-direction: column;
       }
 
       .infoBox {
         margin-bottom: 20px;
+      }
+
+      .infoBox .nickName {
+        text-align: center;
       }
 
       .rightBox {
@@ -147,6 +152,10 @@
       .codeBox {
         margin-left: 0;
       }
+
+      .avatarBox {
+        margin-right: 0;
+      }
     }
 
     @media screen and (max-width:500px) {
@@ -155,7 +164,6 @@
       }
 
       .infoBox {
-        margin-top: 20px;
         margin-bottom: 20px;
       }
 

@@ -192,11 +192,6 @@
       {%- endif %}
 
       {%- if is_index %}
-        {% if post.cover  %}
-          <div class="out-img-topic">
-            <img src={{ post.cover }} class="img-topic" style="margin-top: -30px;">
-          </div>
-        {% endif %}
         {%- if post.description and theme.excerpt_description %}
           {{ post.description }}
           <!--noindex-->
