@@ -192,6 +192,11 @@
       {%- endif %}
 
       {%- if is_index %}
+        {% if post.summary_img  %}
+          <div class="out-img-topic">
+            <img src={{ post.summary_img }} class="img-topic">
+          </div>
+        {% endif %}
         {%- if post.description and theme.excerpt_description %}
           {{ post.description }}
           <!--noindex-->
