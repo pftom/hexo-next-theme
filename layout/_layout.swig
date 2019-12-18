@@ -211,9 +211,6 @@
       }
   </style>
   <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.15.10/build/styles/default.min.css">
-  <!-- Google AdSense start -->
-  {% include '_custom/google_adsense.swig' %}
-  <!-- Google AdSense end -->
 
   <script src="https://cdn.jsdelivr.net/npm/shepherd.js@5.0.1/dist/js/shepherd.js"></script>
 </head>
