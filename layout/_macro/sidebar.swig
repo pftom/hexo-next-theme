@@ -48,7 +48,6 @@
           </div>
         {%- endif %}
       </div>
-      <div style="width: 100%;height: 10px; background: #f5f7f9"></div>
     </div>
   </aside>
   <div id="sidebar-dimmer"></div>
