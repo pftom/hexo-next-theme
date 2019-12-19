@@ -279,11 +279,9 @@ tag_icon: true
 # Wechat Subscriber
 wechat_subscriber:
   enable: true
-  description: 扫码关注微信公众号享受新文章准时推送，扫码进入 QQ 群答疑解惑
 
 qrcode_subscriber:
-  wechat: /uploads/wechat-qcode.jpg
-  qq_group: /uploads/qq_group.jpg
+  wechat: /uploads/wechat-qcode.png
 
 # Reward (Donate)
 reward_settings:
