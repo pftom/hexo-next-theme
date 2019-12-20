@@ -8,8 +8,8 @@
   </div>
 
   <aside class="sidebar">
-    <div class="sidebar-inner" style="padding: 0;">
-      <div style="padding: 20px 10px;">
+    <div class="sidebar-inner">
+      <div>
         {%- set display_toc = theme.toc.enable and display_toc %}
         {%- if display_toc %}
           {%- set next_toc_number = page.toc_number | default(theme.toc.number) %}
