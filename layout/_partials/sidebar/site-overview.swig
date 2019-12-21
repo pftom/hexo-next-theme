@@ -94,7 +94,7 @@
       {%- if theme.social_icons.enable %}
         {%- set sidebarIcon = '<i class="fa fa-fw fa-' + link.split('||')[1] | trim | default('globe') + '"></i>' %}
       {%- endif %}
-        {{ next_url(sidebarURL, sidebarIcon + sidebarText, {title: name + ' &rarr; ' + sidebarURL}) }}
+        {{ next_url(sidebarURL, sidebarIcon + sidebarText) }}
       </span>
     {%- endfor %}
   </div>
