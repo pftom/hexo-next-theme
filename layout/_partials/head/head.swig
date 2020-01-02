@@ -3,6 +3,12 @@
 <meta name="theme-color" content="{{ theme.android_chrome_color }}">
 <meta name="generator" content="Hexo {{ hexo_env('version') }}">
 
+{%- if  page.tags and page.tags.length %}
+  <meta name="keywords" content="{%- for tag in page.tags %}{{ tag.name }},{%- endfor %}{%- if page.keywords %}{{ page.keywords }}{%- endif %}" />
+{%- elif theme.keywords %}
+  <meta name="keywords" content="{{ theme.keywords }}" />
+{% endif %}
+
 {%- if theme.favicon.apple_touch_icon %}
   <link rel="apple-touch-icon" sizes="180x180" href="{{ url_for(theme.favicon.apple_touch_icon) }}?v={{ version }}">
 {%- endif %}
