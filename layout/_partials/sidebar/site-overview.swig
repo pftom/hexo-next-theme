@@ -5,7 +5,7 @@
       alt="{{ author }}">
   {%- endif %}
   <p class="site-author-name" itemprop="name">{{ author }}</p>
-  <div class="site-description" itemprop="description">{{ description }}</div>
+  <div class="site-description" itemprop="description">由 <a href="https://github.com/tuture-dev/tuture" target="_blank">Tuture</a> 工具写成，这里汇集了能够让你从头敲到尾并做出可运行项目的精彩的免费技术教程</div>
 </div>
 
 {%- if theme.site_state %}
