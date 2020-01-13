@@ -11,7 +11,7 @@
       {%- endif %}
       <div style="display: inline-block">
         <img src="{{ url_for(image) }}" alt="{{ author }} {{ translation }}">
-        <!-- <p>{{ translation }}</p> -->
+        <p>扫一扫关注上方公众号，拉学习群和答疑解惑</p>
       </div>
     {%- endfor %}
 

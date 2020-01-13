@@ -62,7 +62,7 @@ footer:
     # If you want to animate the icon, set it to true.
     animated: true
     # Change the color of icon, using Hex Code.
-    color: "#ff0000"
+    color: '#ff0000'
 
   # If not defined, `author` from Hexo `_config.yml` will be used.
   copyright:
@@ -333,8 +333,8 @@ tagcloud:
   # All values below are same as default, change them by yourself
   min: 12 # Minimun font size in px
   max: 30 # Maxium font size in px
-  start: "#ccc" # Start color (hex, rgba, hsla or color keywords)
-  end: "#111" # End color (hex, rgba, hsla or color keywords)
+  start: '#ccc' # Start color (hex, rgba, hsla or color keywords)
+  end: '#111' # End color (hex, rgba, hsla or color keywords)
   amount: 200 # Amount of tags, change it if you have more than 200 tags
 
 # Google Calendar
@@ -366,7 +366,7 @@ text_align:
 mobile_layout_economy: false
 
 # Android Chrome header panel color ($brand-bg / $headband-bg => $black-deep).
-android_chrome_color: "#222"
+android_chrome_color: '#222'
 
 # Hide sticky headers and color the menu bar on Safari (iOS / macOS).
 safari_rainbow: false
@@ -402,14 +402,14 @@ reading_progress:
   enable: true
   # Available values: top | bottom
   position: top
-  color: "#00B887"
+  color: '#00B887'
   height: 2px
 
 # Bookmark Support
 bookmark:
   enable: true
   # Customize the color of the bookmark.
-  color: "#222"
+  color: '#222'
   # If auto, save the reading progress when closing the page or clicking the bookmark-icon.
   # If manual, only save it by clicking the bookmark-icon.
   save: auto
@@ -669,7 +669,7 @@ livere_uid: # <your_uid>
 # Demo: https://gitalk.github.io
 # For more information: https://github.com/gitalk/gitalk
 gitalk:
-  enable: true
+  enable: false
   github_id: tuture-dev # GitHub repo owner
   repo: comments # Repository name to store issues
   client_id: 6310753ce4e95163d2b0 # GitHub Application Client ID
@@ -800,8 +800,8 @@ algolia_search:
     per_page: 10
   labels:
     input_placeholder: 搜索教程
-    hits_empty: "我们找不到你搜索的教程: ${query}"
-    hits_stats: "在 ${time} ms 内找到 ${hits} 条结果"
+    hits_empty: '我们找不到你搜索的教程: ${query}'
+    hits_stats: '在 ${time} ms 内找到 ${hits} 条结果'
 
 # Local Search
 # Dependencies: https://github.com/wzpan/hexo-generator-search
@@ -932,7 +932,7 @@ three:
 canvas_nest:
   enable: false
   onmobile: true # Display on mobile or not
-  color: "0,0,255" # RGB values, use `,` to separate
+  color: '0,0,255' # RGB values, use `,` to separate
   opacity: 0.5 # The opacity of line: 0~1
   zIndex: -1 # z-index property of the background
   count: 99 # The number of lines
