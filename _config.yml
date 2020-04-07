@@ -123,14 +123,13 @@ scheme: Pisces
 # External url should start with http:// or https://
 menu:
   home: / || home
-  路线: /roadmaps || code-fork
   tags: /tags/ || tags
   categories: /categories/ || th
   archives: /archives/ || archive
   # schedule: /schedule/ || calendar
   # commonweal: /404/ || heartbeat
   about: /about/ || user
-  文档: https://docs.tuture.co/ || book
+  文档: https://www.yuque.com/tuture/product-manuals || book
   FAQ: /FAQ || question
 
 # Enable / Disable menu icons / item badges.
