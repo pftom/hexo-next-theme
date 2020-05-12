@@ -126,7 +126,7 @@ menu:
   tags: /tags/ || tags
   categories: /categories/ || th
   archives: /archives/ || archive
-  日报: /daily/ || calendar
+  早报: https://github.com/tuture-dev/daily || calendar
   # commonweal: /404/ || heartbeat
   about: /about/ || user
   文档: https://www.yuque.com/tuture/product-manuals || book
