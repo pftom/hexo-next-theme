@@ -126,7 +126,7 @@ menu:
   tags: /tags/ || tags
   categories: /categories/ || th
   archives: /archives/ || archive
-  # schedule: /schedule/ || calendar
+  日报: /daily/ || calendar
   # commonweal: /404/ || heartbeat
   about: /about/ || user
   文档: https://www.yuque.com/tuture/product-manuals || book
@@ -646,7 +646,7 @@ changyan:
 # You can get your appid and appkey from https://leancloud.cn
 # For more information: https://valine.js.org, https://github.com/xCss/Valine
 valine:
-  enable: true # When enable is set to be true, leancloud_visitors is recommended to be closed for the re-initialization problem within different leancloud adk version
+  enable: false # When enable is set to be true, leancloud_visitors is recommended to be closed for the re-initialization problem within different leancloud adk version
   appid: YNUBNSPGxBaXOi74pCWOehF0-gzGzoHsz # Your leancloud application appid
   appkey: 453h4sqSi12KyOOQr3d5QFPR # Your leancloud application appkey
   notify: true # Mail notifier. See: https://github.com/xCss/Valine/wiki
@@ -668,7 +668,7 @@ livere_uid: # <your_uid>
 # Demo: https://gitalk.github.io
 # For more information: https://github.com/gitalk/gitalk
 gitalk:
-  enable: false
+  enable: true
   github_id: tuture-dev # GitHub repo owner
   repo: comments # Repository name to store issues
   client_id: 6310753ce4e95163d2b0 # GitHub Application Client ID
