@@ -8,8 +8,8 @@
   </div>
 
   <aside class="sidebar">
-    <div class="sidebar-inner" style="padding-left: 0; padding-right: 0;">
-      <div style="padding-left: 10px; padding-right: 10px; padding-bottom: 10px;">
+    <div class="sidebar-inner">
+      <div>
         {%- set display_toc = theme.toc.enable and display_toc %}
         {%- if display_toc %}
           {%- set next_toc_number = page.toc_number | default(theme.toc.number) %}
@@ -48,8 +48,6 @@
           </div>
         {%- endif %}
       </div>
-      <div style="width: 100%;height: 10px; background: #f5f7f9"></div>
-      {% include 'google_adsense_auto.swig' %}
     </div>
   </aside>
   <div id="sidebar-dimmer"></div>
