@@ -48,6 +48,7 @@
           </div>
         {%- endif %}
       </div>
+      {% include 'google_adsense_auto.swig' %}
     </div>
   </aside>
   <div id="sidebar-dimmer"></div>
